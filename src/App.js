@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import React from "react";
+import Home from "./components/Home";
+import { Route, Routes, HashRouter } from "react-router-dom";
+import ShowSearch from "./components/tvmaze/ShowSearch";
+import CafeHome from "./components/cafe/CafeHome";
+import ListHome from "./components/todolist/ListHome";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<ThemeProvider>
+				<HashRouter>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/show-search' element={<ShowSearch />}></Route>
+						<Route path='/cafe' element={<CafeHome />}></Route>
+						<Route path='/task-list' element={<ListHome />}></Route>
+					</Routes>
+				</HashRouter>
+			</ThemeProvider>
+		</>
+	);
 }
 
 export default App;

@@ -1,0 +1,98 @@
+main {
+	h1 {
+		text-align: center;
+		color: black;
+		font-weight: 300;
+		border-bottom: 1px solid black;
+		width: 40%;
+		margin: 30px auto;
+		max-width: 500px;
+		min-width: 220px;
+		padding: 5px 0px;
+	}
+	.search-container {
+		text-align: center;
+		margin: auto;
+		form {
+			.input {
+				width: 80%;
+				max-width: 700px;
+				padding: 10px 20px;
+				border-radius: 5px;
+				border: 1px solid black;
+				height: 35px;
+			}
+			.search-btn {
+				color: whitesmoke;
+				height: 35px;
+				padding: 0px 20px;
+				background-color: #112031;
+				border: 1px solid black;
+				border-radius: 5px;
+				margin: 0px 10px;
+				@media screen and (min-width: 0) and (max-width: 730px) {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	.thanks-text {
+		max-width: 700px;
+		width: 80%;
+		margin: 10px auto;
+		text-align: left;
+		a {
+			color: #c84b31;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+
+	.shows {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 90%;
+		max-width: 1500px;
+		margin: 30px auto;
+		//670px
+		@media screen and (min-width: 0) and (max-width: 700px) {
+			flex-direction: column;
+		}
+		article {
+			//border: 1px solid #112031;
+			width: 45%;
+			padding: 10px;
+			margin: 10px auto;
+			text-align: center;
+			border-radius: 5px;
+			background-color: whitesmoke;
+			@media screen and (min-width: 0) and (max-width: 700px) {
+				width: 90%;
+			}
+			h3 {
+				text-decoration: underline;
+			}
+			p {
+				border: 1px solid black;
+				border-radius: 5px;
+				height: auto;
+				width: 90%;
+				padding: 5px;
+				margin: 10px auto;
+				text-align: center;
+			}
+			img {
+				max-width: 80%;
+			}
+			a {
+				margin: 10px auto;
+				color: #c84b31;
+			}
+			a:hover {
+				text-decoration: underline;
+				color: #112031;
+			}
+		}
+	}
+}

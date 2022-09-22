@@ -1,0 +1,100 @@
+.tecnologias {
+  padding-top: 200px;
+  height: 1050px;
+}
+.tecnologias .info-text {
+  border: 2px solid #4db2ce;
+  border-radius: 20px;
+  width: 40%;
+  max-width: 500px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  text-align: center;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .tecnologias .info-text {
+    width: 80%;
+    min-width: 100px;
+    margin-bottom: 50px;
+  }
+}
+.tecnologias .info-text h3 {
+  margin: 20px 30px;
+  padding: 4px 0px;
+  border-bottom: 1px solid #4db2ce;
+}
+.tecnologias .info-text p {
+  padding: 20px 30px;
+}
+.tecnologias .adv-tecnologias {
+  text-align: center;
+  margin: 30px auto;
+  -webkit-text-decoration: 2px underline #4db2ce;
+          text-decoration: 2px underline #4db2ce;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .tecnologias .adv-tecnologias {
+    display: none;
+  }
+}
+.tecnologias .icons-container {
+  border: 2px solid #4db2ce;
+  border-radius: 20px;
+  /*
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0px auto;
+        justify-content: space-around;
+        */
+  margin: 0px auto;
+  width: 80%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .tecnologias .icons-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+}
+.tecnologias .icons-container .icon-container {
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+}
+.tecnologias .icons-container .icon-container h4 {
+  width: 120px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 2px 2px;
+  border-bottom: 1px solid #4db2ce;
+}
+.tecnologias .icons-container .icon-container svg {
+  width: 110px;
+  height: 110px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: auto;
+}
+.tecnologias .icons-container .icon-container svg:hover {
+  border: 2px solid #4db2ce;
+  cursor: pointer;
+}
+.tecnologias .tecnologias-descripcion {
+  border: 2px solid #4db2ce;
+  width: 80%;
+  max-width: 1100px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+@media screen and (min-width: 0) and (max-width: 769px) {
+  .tecnologias .tecnologias-descripcion {
+    display: none;
+  }
+}
+.tecnologias .tecnologias-descripcion p {
+  padding: 10px 20px;
+}/*# sourceMappingURL=Tecnologias.css.map */

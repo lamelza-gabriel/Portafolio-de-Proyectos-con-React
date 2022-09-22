@@ -1,0 +1,97 @@
+main h1 {
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  width: 40%;
+  margin: 30px auto;
+  max-width: 500px;
+  min-width: 220px;
+  padding: 5px 0px;
+}
+main .search-container {
+  text-align: center;
+  margin: auto;
+}
+main .search-container form .input {
+  width: 80%;
+  max-width: 700px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 35px;
+}
+main .search-container form .search-btn {
+  color: whitesmoke;
+  height: 35px;
+  padding: 0px 20px;
+  background-color: #112031;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+@media screen and (min-width: 0) and (max-width: 730px) {
+  main .search-container form .search-btn {
+    margin-top: 20px;
+  }
+}
+main .thanks-text {
+  max-width: 700px;
+  width: 80%;
+  margin: 10px auto;
+  text-align: left;
+}
+main .thanks-text a {
+  color: #c84b31;
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .shows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1500px;
+  margin: 30px auto;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  main .shows {
+    flex-direction: column;
+  }
+}
+main .shows article {
+  width: 45%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  main .shows article {
+    width: 90%;
+  }
+}
+main .shows article h3 {
+  text-decoration: underline;
+}
+main .shows article p {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: auto;
+  width: 90%;
+  padding: 5px;
+  margin: 10px auto;
+  text-align: center;
+}
+main .shows article img {
+  max-width: 80%;
+}
+main .shows article a {
+  margin: 10px auto;
+  color: #c84b31;
+}
+main .shows article a:hover {
+  text-decoration: underline;
+  color: #112031;
+}/*# sourceMappingURL=ShowForm.css.map */

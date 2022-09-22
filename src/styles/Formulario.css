@@ -1,0 +1,150 @@
+.contacto {
+  margin: 0px 0px;
+  padding: 20px 0px;
+}
+.contacto .contact-text {
+  border: 1px solid #4db2ce;
+  border-radius: 10px;
+  width: 500px;
+  margin: 30px auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .contacto .contact-text {
+    width: 80%;
+  }
+}
+.contacto .contact-text h4 {
+  margin: 10px auto;
+  border-bottom: 1px solid #4db2ce;
+  width: 200px;
+  padding: 3px;
+}
+.contacto .form-container {
+  width: 40%;
+  max-width: 1100px;
+  margin: 0px auto;
+  min-width: 500px;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .contacto .form-container {
+    width: 80%;
+    min-width: 100px;
+  }
+}
+.contacto .form-container form {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #4db2ce;
+  border-radius: 10px;
+}
+.contacto .form-container form textarea {
+  min-width: 400px;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 5px;
+  resize: none;
+  padding: 10px 20px;
+  border: 2px solid #334257;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .contacto .form-container form textarea {
+    width: 80%;
+    min-width: 100px;
+  }
+}
+.contacto .form-container form label {
+  width: 80%;
+  margin: 10px auto;
+  text-align: left;
+  padding-left: 5px;
+  text-decoration: underline;
+  max-width: 500px;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .contacto .form-container form label {
+    width: 80%;
+    min-width: 100px;
+  }
+}
+.contacto .form-container form input {
+  min-width: 400px;
+  border: 2px solid #334257;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  margin: 0px auto;
+  padding: 10px 20px;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .contacto .form-container form input {
+    width: 80%;
+    min-width: 100px;
+  }
+}
+.contacto .form-container form .form-btn {
+  background: #112b3c;
+  border: 2px solid black;
+  color: white;
+}
+.contacto .form-container form .form-btn:hover {
+  opacity: 0.75;
+}
+.contacto .contact-info {
+  margin: 50px auto;
+  border-bottom: 1px solid #4db2ce;
+  width: 40%;
+  text-align: center;
+  padding: 2px;
+}
+.contacto .iconos-contacto {
+  /*
+        display: flex;
+        width: 60%;
+        margin: 10px auto;
+        border: 1px solid black;
+        justify-content: space-around;
+        height: 100px;
+        */
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 40%;
+  min-width: 410px;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .contacto .iconos-contacto {
+    width: 80%;
+    min-width: 100px;
+  }
+}
+.contacto .iconos-contacto .icons-container p {
+  text-align: center;
+  margin: 10px auto;
+  border-bottom: 1px solid #4db2ce;
+}
+.contacto .iconos-contacto .icons-container a {
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+.contacto .iconos-contacto .icons-container a img {
+  box-sizing: content-box;
+  border: 1px solid transparent;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.contacto .iconos-contacto .icons-container a img:hover {
+  border: 1px solid #4db2ce;
+}/*# sourceMappingURL=Formulario.css.map */

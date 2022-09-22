@@ -1,0 +1,104 @@
+.tecnologias {
+	padding-top: 200px;
+	height: 1050px;
+	@media screen and (min-width: 0) and (max-width: 700px) {
+	}
+	//background: #dedede;
+	.info-text {
+		//background: rgba(84, 140, 168, 0.3);
+		border: 2px solid #4db2ce;
+		border-radius: 20px;
+		width: 40%;
+		max-width: 500px;
+		padding: 10px 0px;
+		margin: 0px auto;
+		text-align: center;
+		@media screen and (min-width: 0) and (max-width: 700px) {
+			width: 80%;
+			min-width: 100px;
+			margin-bottom: 50px;
+		}
+		h3 {
+			margin: 20px 30px;
+			padding: 4px 0px;
+			border-bottom: 1px solid #4db2ce;
+		}
+		p {
+			padding: 20px 30px;
+		}
+	}
+	.adv-tecnologias {
+		text-align: center;
+		margin: 30px auto;
+		//border-bottom: 1px solid #548ca8;
+		text-decoration: 2px underline #4db2ce;
+		@media screen and (min-width: 0) and (max-width: 700px) {
+			display: none;
+		}
+	}
+	.icons-container {
+		border: 2px solid #4db2ce;
+		border-radius: 20px;
+		/*
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0px auto;
+        justify-content: space-around;
+        */
+		margin: 0px auto;
+		width: 80%;
+		max-width: 1100px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 0px;
+		@media screen and (min-width: 0) and (max-width: 700px) {
+			grid-template-columns: repeat(2, 1fr);
+			width: 90%;
+		}
+		.icon-container {
+			text-align: center;
+			margin: 0px;
+			padding: 10px;
+			@media screen and (min-width: 0) and (max-width: 700px) {
+			}
+			h4 {
+				width: 120px;
+				text-align: center;
+				margin: 10px auto;
+				padding: 2px 2px;
+				border-bottom: 1px solid #4db2ce;
+			}
+			svg {
+				//border gris, cuando este activo va el celeste
+				//REVISAR
+				//border: 2px solid black;
+				width: 110px;
+				height: 110px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				margin: auto;
+				@media screen and (min-width: 0) and (max-width: 700px) {
+				}
+			}
+			svg:hover {
+				//TIENE UN COLOR DISTINTO, MAS BRILLANTE
+				border: 2px solid #4db2ce;
+				cursor: pointer;
+			}
+		}
+	}
+	.tecnologias-descripcion {
+		border: 2px solid #4db2ce;
+		width: 80%;
+		max-width: 1100px;
+		margin: 30px auto;
+		border-radius: 10px;
+		@media screen and (min-width: 0) and (max-width: 769px) {
+			display: none;
+		}
+		p {
+			padding: 10px 20px;
+		}
+	}
+}

@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #333;
+  font-family: "Open Sans", Arial, Sans-serif;
+}
+body header {
+  width: 100%;
+  background: url(../../assets/cafe/bg.jpg), #281a0c;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+}
+body header .header-container {
+  height: 700px;
+}
+@media screen and (max-width: 800px) {
+  body header .header-container {
+    height: 330px;
+  }
+}
+body header .header-container nav {
+  width: 50%;
+  margin: 0px auto;
+  text-align: right;
+}
+@media screen and (max-width: 800px) {
+  body header .header-container nav {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1450px) {
+  body header .header-container nav {
+    width: auto;
+  }
+}
+body header .header-container nav a {
+  margin: 35px 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 20px;
+  font-weight: 300;
+}
+@media screen and (max-width: 800px) {
+  body header .header-container nav a {
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+body header .header-container nav a:hover {
+  text-decoration: underline;
+}
+body header .header-container .header-text {
+  color: white;
+  width: 50%;
+  margin: 200px auto;
+  text-align: left;
+}
+@media screen and (max-width: 800px) {
+  body header .header-container .header-text {
+    margin: 10px auto;
+  }
+}
+body header .header-container .header-text h1 {
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+body header .header-container .header-text h1 span {
+  font-weight: 300;
+}
+body header .header-container .header-text h3 {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 300;
+}
+body .main-cafe {
+  background: url(../../assets/cafe/bg-textura.png);
+}
+body .main-cafe .about {
+  height: 417px;
+  margin: 0px auto;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  body .main-cafe .about {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1450px) {
+  body .main-cafe .about {
+    display: block;
+  }
+}
+body .main-cafe .about .image-container {
+  width: 60%;
+}
+@media screen and (max-width: 800px) {
+  body .main-cafe .about .image-container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1450px) {
+  body .main-cafe .about .image-container {
+    width: 100%;
+  }
+}
+body .main-cafe .about .image-container img {
+  width: 100%;
+}
+body .main-cafe .about .about-text-container {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+  background-color: white;
+  width: 40%;
+}
+@media screen and (max-width: 800px) {
+  body .main-cafe .about .about-text-container {
+    width: 100%;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1450px) {
+  body .main-cafe .about .about-text-container {
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 20px 0px;
+    margin: 40px 0px;
+  }
+}
+body .main-cafe .about .about-text-container .about-text {
+  margin: 10px auto;
+  width: 80%;
+}
+@media screen and (max-width: 800px) {
+  body .main-cafe .about .about-text-container .about-text {
+    margin: 0px auto;
+  }
+}
+body .main-cafe .about .about-text-container .about-text h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 25px 0px;
+  text-align: left;
+}
+body .main-cafe .about .about-text-container .about-text p {
+  margin: 30px 0px;
+}
+body .main-cafe .menu {
+  width: 65%;
+  margin: 0px auto;
+}
+@media screen and (max-width: 800px) {
+  body .main-cafe .menu {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1450px) {
+  body .main-cafe .menu {
+    margin-top: 350px;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1450px) {
+  body .main-cafe .menu {
+    margin-top: 380px;
+  }
+}
+body .main-cafe .menu h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  margin: 30px auto;
+}
+body .main-cafe .menu .menu-container {
+  border: 1px solid black;
+  padding: 10px;
+}
+body .main-cafe .menu .menu-container .menu-container2 {
+  border: 1px solid black;
+}
+body .main-cafe .menu .menu-container .menu-container2 .category-container {
+  margin: 30px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+body .main-cafe .menu .menu-container .menu-container2 .category-container div {
+  margin: 10px 0px;
+  width: 45%;
+}
+body .main-cafe .menu .menu-container .menu-container2 .category-container div h4 {
+  text-align: center;
+  font-size: 22px;
+}
+body .main-cafe .menu .menu-container .menu-container2 .category-container div .item-container {
+  height: auto;
+  width: 90%;
+  margin: 20px auto;
+  border-bottom: 3px dotted black;
+}
+body .main-cafe .menu .menu-container .menu-container2 .category-container div .item-container .nombre-item {
+  font-weight: 400;
+  float: left;
+  width: 85%;
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+@media screen and (max-width: 800px) {
+  body .main-cafe .menu .menu-container .menu-container2 .category-container div .item-container .nombre-item {
+    text-align: left;
+    float: none;
+    width: 100%;
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+}
+body .main-cafe .menu .menu-container .menu-container2 .category-container div .item-container .precio-item {
+  float: right;
+  text-align: right;
+  width: 15%;
+  height: 50px;
+  font-size: 21px;
+}
+@media screen and (max-width: 800px) {
+  body .main-cafe .menu .menu-container .menu-container2 .category-container div .item-container .precio-item {
+    text-align: left;
+    margin: 10px 0px;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+body .main-cafe .menu .menu-container .menu-container2 .category-container div .item-container .descripcion-item {
+  width: 85%;
+  font-size: 16px;
+}
+@media screen and (max-width: 800px) {
+  body .main-cafe .menu .menu-container .menu-container2 .category-container div .item-container .descripcion-item {
+    margin: 20px 0px;
+  }
+}
+body .main-cafe .galeria {
+  width: 100%;
+}
+body .main-cafe .galeria .imgs-container {
+  width: 100%;
+  display: flex;
+}
+body .main-cafe .galeria .imgs-container img {
+  opacity: 0.5;
+  display: block;
+  width: 25%;
+}
+@media screen and (max-width: 800px) {
+  body .main-cafe .galeria .imgs-container img {
+    opacity: 1;
+  }
+}
+body .main-cafe .galeria .imgs-container img:hover {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+body .main-cafe .contacto-horarios {
+  display: flex;
+  width: 70%;
+  margin: 30px auto;
+  justify-content: space-around;
+}
+body .main-cafe .contacto-horarios div h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+}
+body .main-cafe .ubicacion-container {
+  width: 100%;
+}
+body .main-cafe .ubicacion-container iframe {
+  width: 100%;
+}
+body .footer-cafe {
+  background: black;
+}
+@media screen and (max-width: 800px) {
+  body .footer-cafe {
+    background: black;
+  }
+}
+body .footer-cafe p {
+  text-align: center;
+  padding: 40px 0px;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */

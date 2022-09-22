@@ -1,0 +1,49 @@
+.shows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 1500px;
+  margin: 30px auto;
+}
+@media screen and (min-width: 0) and (max-width: 730px) {
+  .shows {
+    flex-direction: column;
+  }
+}
+.shows article {
+  width: 40%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+@media screen and (min-width: 0) and (max-width: 730px) {
+  .shows article {
+    width: 80%;
+  }
+}
+.shows article h3 {
+  text-decoration: underline;
+}
+.shows article div p {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: auto;
+  width: 90%;
+  padding: 5px;
+  margin: 10px auto;
+  text-align: center;
+}
+.shows article img {
+  max-width: 80%;
+}
+.shows article a {
+  margin: 10px auto;
+  color: #c84b31;
+}
+.shows article a:hover {
+  text-decoration: underline;
+  color: #112031;
+}/*# sourceMappingURL=ShowIndividual.css.map */

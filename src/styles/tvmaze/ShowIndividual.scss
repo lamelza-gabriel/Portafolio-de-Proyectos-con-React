@@ -1,0 +1,50 @@
+.shows {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 95%;
+	max-width: 1500px;
+	margin: 30px auto;
+
+	@media screen and (min-width: 0) and (max-width: 730px) {
+		flex-direction: column;
+	}
+
+	article {
+		//border: 1px solid #112031;
+		width: 40%;
+		padding: 10px;
+		margin: 10px auto;
+		text-align: center;
+		border-radius: 5px;
+		background-color: whitesmoke;
+		@media screen and (min-width: 0) and (max-width: 730px) {
+			width: 80%;
+		}
+		h3 {
+			text-decoration: underline;
+		}
+		div {
+			p {
+				border: 1px solid black;
+				border-radius: 5px;
+				height: auto;
+				width: 90%;
+				padding: 5px;
+				margin: 10px auto;
+				text-align: center;
+			}
+		}
+		img {
+			max-width: 80%;
+		}
+		a {
+			margin: 10px auto;
+			color: #c84b31;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: #112031;
+		}
+	}
+}
