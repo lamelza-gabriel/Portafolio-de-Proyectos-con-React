@@ -1,6 +1,11 @@
 .tecnologias {
-  padding-top: 200px;
+  padding-top: 100px;
   height: 1050px;
+}
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .tecnologias {
+    padding-top: 100px;
+  }
 }
 .tecnologias .info-text {
   border: 2px solid #4db2ce;
@@ -90,7 +95,7 @@
   margin: 30px auto;
   border-radius: 10px;
 }
-@media screen and (min-width: 0) and (max-width: 769px) {
+@media screen and (min-width: 0) and (max-width: 700px) {
   .tecnologias .tecnologias-descripcion {
     display: none;
   }

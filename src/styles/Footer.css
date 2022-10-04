@@ -2,6 +2,7 @@ footer {
   border-top: 1px solid black;
   padding: 20px;
   background: #112b3c;
+  color: white;
 }
 footer .footer-text {
   text-align: center;

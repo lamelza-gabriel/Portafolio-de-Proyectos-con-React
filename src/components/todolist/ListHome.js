@@ -3,11 +3,6 @@ import Form from "./Form";
 import TaskList from "./TaskList";
 import "../../styles/todolist/TaskListsStyles.css";
 
-/*
-
-
-*/
-
 const ListHome = () => {
 	//estado para almacenar las tareas
 	//este estado y su funcion actualizadora sera recibida por TaskList

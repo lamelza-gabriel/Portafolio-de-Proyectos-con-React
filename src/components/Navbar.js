@@ -1,20 +1,88 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import ThemeContext from "../contexts/ThemeContext";
 //import githubSvg from "../assets/main/github-brands.svg";
 //import instagramSvg from "../assets/main/instagram-brands.svg";
 //import linkedinSvg from "../assets/main/linkedin-in-brands.svg";
 import "../styles/Navbar.css";
-import moonLogo from "../assets/main/moon-regular.svg";
-import sunLogo from "../assets/main/sun-regular.svg";
+//import moonLogo from "../assets/main/moon-regular.svg";
+//import sunLogo from "../assets/main/sun-regular.svg";
 
 const Navbar = () => {
 	//dark/light theme
 	const { tema, manejarTema } = useContext(ThemeContext);
-	//cambiar idioma
+
+	//Abrir cerrar menu
+	const [menuPhone, setMenuPhone] = useState(false);
+
+	const handleMenu = () => {
+		setMenuPhone(!menuPhone);
+	};
 
 	return (
 		<section id='inicio' className={`navbar ${tema}`}>
 			<nav>
+				<div className='phone-menu'>
+					<button onClick={handleMenu}>
+						<svg
+							className='btn-svg-test'
+							xmlns='http://www.w3.org/2000/svg'
+							viewBox='0 0 448 512'
+						>
+							<path d='M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z' />
+						</svg>
+					</button>
+					{menuPhone && (
+						<div className='phone-menu-container'>
+							<ul>
+								<li>
+									<a
+										onClick={() => {
+											let offsetTop =
+												document.getElementById("section-tecnologia").offsetTop;
+											window.scrollTo({
+												top: offsetTop - 50,
+												behavior: "smooth",
+											});
+											setMenuPhone(false);
+										}}
+									>
+										Tecnologias
+									</a>
+								</li>
+								<li>
+									<a
+										onClick={() => {
+											let offsetTop =
+												document.getElementById("section-proyectos").offsetTop;
+											window.scrollTo({
+												top: offsetTop - 50,
+												behavior: "smooth",
+											});
+											setMenuPhone(false);
+										}}
+									>
+										Proyectos
+									</a>
+								</li>
+								<li>
+									<a
+										onClick={() => {
+											let offsetTop =
+												document.getElementById("section-contacto").offsetTop;
+											window.scrollTo({
+												top: offsetTop - 50,
+												behavior: "smooth",
+											});
+											setMenuPhone(false);
+										}}
+									>
+										Contacto
+									</a>
+								</li>
+							</ul>
+						</div>
+					)}
+				</div>
 				{/* LINK NAVEGACION */}
 				<div className='links-container'>
 					<a
@@ -101,28 +169,6 @@ const Navbar = () => {
 			<div className='main-text'>
 				<h2>Gabriel Lamelza</h2>
 				<h3>Front-End Developer</h3>
-			</div>
-			<div className={`theme-container ${tema}`}>
-				<input
-					type='radio'
-					name='tema'
-					id='light-context'
-					onClick={manejarTema}
-					value='light'
-				/>
-				<label htmlFor='light-context'>
-					<img src={sunLogo} alt='imagen sol' />
-				</label>
-				<input
-					type='radio'
-					name='tema'
-					id='dark-context'
-					onClick={manejarTema}
-					value='dark'
-				/>
-				<label htmlFor='dark-context'>
-					<img src={moonLogo} alt='imagen luna' />
-				</label>
 			</div>
 		</section>
 	);
