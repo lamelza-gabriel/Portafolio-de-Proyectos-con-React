@@ -1,9 +1,9 @@
 import React from "react";
 import cafeCaratula from "../assets/main/nathan-dumlao-6VhPY27jdps-unsplash.jpg";
 import tvCaratula from "../assets/tvmaze/tvm-header-logo.png";
-import ListCaratula from "../assets/todolist/to-do-list-img.png";
 import "../styles/Proyectos.css";
 import { NavLink } from "react-router-dom";
+import taskCaratula from "../assets/task-picture.png";
 
 const Proyectos = () => {
 	return (
@@ -54,12 +54,16 @@ const Proyectos = () => {
 						<img
 							className='caratula-proyecto'
 							id='img-test'
-							src={ListCaratula}
 							alt='test'
+							src={taskCaratula}
 						/>
-						<NavLink to='/task-list' className='nav-link' target='_blank'>
-							Ver proyecto
-						</NavLink>
+						<a
+							href='https://github.com/lamelza-gabriel/Task-Manager-React-Node'
+							target='_blank'
+							rel='noreferrer'
+						>
+							Ver codigo de proyecto en GitHub
+						</a>
 					</div>
 				</article>
 			</div>

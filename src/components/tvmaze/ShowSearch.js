@@ -12,7 +12,7 @@ const ShowSearch = () => {
 	const [search, setSearch] = useState(null);
 	const [mostrarShows, setMostrarShows] = useState("");
 
-	//useEffect que dispara la la peticion fetch, pero tendremos un btn que disparará el cambio en el estado search, que es la dependencia de este useEffect
+	//useEffect que dispara la peticion fetch, pero tendremos un btn que disparará el cambio en el estado search, que es la dependencia de este useEffect
 	useEffect(() => {
 		if (search === null) return;
 
