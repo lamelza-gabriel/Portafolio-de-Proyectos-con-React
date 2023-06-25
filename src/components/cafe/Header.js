@@ -53,7 +53,7 @@ const Header = () => {
 
 				<div className='header-text'>
 					<h1>
-						Café <span>del Mundo</span>
+						Nombre <span>del cafe</span>
 					</h1>
 					<h3>Descripcion del cafe</h3>
 				</div>

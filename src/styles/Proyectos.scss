@@ -38,8 +38,10 @@
 		min-width: 700px;
 		max-width: 1600px;
 		margin: 0px auto;
-		@media screen and (min-width: 0) and (max-width: 720px) {
+		@media screen and (min-width: 0) and (max-width: 768px) {
 			flex-direction: column;
+			width: 100%;
+			justify-content: space-between;
 			min-width: 100px;
 		}
 		.proyect {
@@ -49,8 +51,8 @@
 			text-align: center;
 			margin: 10px 10px;
 			padding: 30px 0px;
-			@media screen and (min-width: 0) and (max-width: 720px) {
-				margin: 10px auto;
+			@media screen and (min-width: 0) and (max-width: 768px) {
+				margin: 20px auto;
 				width: 80%;
 			}
 		}

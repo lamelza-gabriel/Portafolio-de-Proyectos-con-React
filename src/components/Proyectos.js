@@ -4,6 +4,7 @@ import tvCaratula from "../assets/tvmaze/tvm-header-logo.png";
 import "../styles/Proyectos.css";
 import { NavLink } from "react-router-dom";
 import taskCaratula from "../assets/task-picture.png";
+import FakeStoreCaratula from "../assets/main/ashim-d-silva-ZmgJiztRHXE-unsplash (1).jpg";
 
 const Proyectos = () => {
 	return (
@@ -15,6 +16,27 @@ const Proyectos = () => {
 
 			<div className='proyects-container'>
 				{/* Proyecto Individual */}
+
+				<article className='proyect'>
+					<h3>Tienda de Ropa</h3>
+					<p>Tienda de Ropa, con carrito de compras y pasarela de pagos</p>
+					<div className='proyect-image'>
+						<img
+							className='caratula-proyecto'
+							id='img-test'
+							alt='test'
+							src={FakeStoreCaratula}
+						/>
+						<a
+							href='https://fakestore-6a2d4.web.app/'
+							target='_blank'
+							rel='noreferrer'
+						>
+							Ver Proyecto
+						</a>
+					</div>
+				</article>
+
 				<article className='proyect'>
 					<h3>Home page de un Café</h3>
 					<p>Pagina de un cafe con secciones varias</p>

@@ -11,7 +11,7 @@ const Contacto = () => {
 					<p>San Rafael, Mendoza</p>
 					<br />
 					<p>+54 2604289901</p>
-					<p>cafedelmundo@gmail.com</p>
+					<p>cafe@gmail.com</p>
 				</div>
 
 				<div className='horarios-container'>

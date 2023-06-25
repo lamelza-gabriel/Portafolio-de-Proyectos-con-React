@@ -119,8 +119,7 @@
 .todo.new-item {
   opacity: 0;
   transform: translateX(100px);
-  -webkit-animation: fadeIn 0.3s linear forwards;
-          animation: fadeIn 0.3s linear forwards;
+  animation: fadeIn 0.3s linear forwards;
 }
 
 .todo__state {
@@ -163,20 +162,7 @@
   stroke-width: 0;
   transform-origin: 13.5px 12.5px;
   transform: scale(0.4) rotate(0deg);
-  -webkit-animation: none 0.4s linear;
-          animation: none 0.4s linear;
-}
-@-webkit-keyframes explode {
-  30% {
-    stroke-width: 3;
-    stroke-opacity: 1;
-    transform: scale(0.8) rotate(40deg);
-  }
-  100% {
-    stroke-width: 0;
-    stroke-opacity: 0;
-    transform: scale(1.1) rotate(60deg);
-  }
+  animation: none 0.4s linear;
 }
 @keyframes explode {
   30% {
@@ -210,10 +196,8 @@
 }
 
 .todo__circle {
-  -webkit-animation-delay: 0.28s;
-          animation-delay: 0.28s;
-  -webkit-animation-duration: 0.28s;
-          animation-duration: 0.28s;
+  animation-delay: 0.28s;
+  animation-duration: 0.28s;
 }
 
 .todo__state:checked ~ .todo__text {
@@ -233,15 +217,7 @@
   transition-delay: 0.24s;
 }
 .todo__state:checked ~ .todo__icon .todo__circle {
-  -webkit-animation-name: explode;
-          animation-name: explode;
-}
-
-@-webkit-keyframes fadeIn {
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
+  animation-name: explode;
 }
 
 @keyframes fadeIn {

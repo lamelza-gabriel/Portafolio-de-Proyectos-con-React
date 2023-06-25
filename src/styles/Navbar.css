@@ -6,7 +6,6 @@
   background-position: center center;
 }
 .navbar nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -27,12 +26,12 @@
   .navbar nav .phone-menu {
     width: 100%;
     display: block;
-    text-align: right;
+    text-align: left;
   }
   .navbar nav .phone-menu button {
-    align-items: right;
-    text-align: right;
-    margin: 5px 5px 0px 0px;
+    align-items: left;
+    text-align: left;
+    margin: 5px 5px 0px 10px;
     padding: 5px;
     border: none;
     width: 40px;

@@ -37,6 +37,16 @@ const Tecnologias = () => {
 			texto:
 				"Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente",
 		},
+		{
+			nombre: "node.js",
+			texto:
+				"Node.js es un entorno de tiempo de ejecución de JavaScript de back-end, se ejecuta en el motor de JavaScript V8 y ejecuta el código de JavaScript fuera de un navegador web.",
+		},
+		{
+			nombre: "express.js",
+			texto:
+				"Express es un entorno de trabajo para aplicaciones web para el programario Node.js, de código abierto y con licencia MIT. Se utiliza para desarrollar aplicaciones web y APIs.",
+		},
 	];
 	//ESTADOS
 	//textos
